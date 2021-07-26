@@ -2,7 +2,7 @@ import os                  #IMPORT PARA USAR CÓDIGO DE LIMPAR TERMINAL
 import logojogo            #IMPORT PARA PEGAR LOGO DO JOGO EM OUTRO ARQUIVO
 import playsound           #IMPORT PARA PODER RODAR SONS NO JOGO
 import time                #IMPORT PARA UTILIZAR TEMPO COMO ESPAÇAMENTO DE AÇOES
-playsound.playsound('n01.mp3')
+#playsound.playsound('n01.mp3')
 
 print()
 print(f"\n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n  🚀  Bem-vindo A Última Centelha do Universo.  🚀  \n-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-\n")
@@ -154,6 +154,10 @@ class Mochila():
 
 bag = Mochila(5)
 
+# pop = chaveRe.Adquirido()
+# bag.getItem(pop)
+# bag.abrirMochila()
+
 ######### INPUT PRA PEGAR NOME, IDADE, GENERO DO PERSONAGEM QUE VAI INTERAGIR COM O GAME. ↓
 nome = str(input("Digite o nome do personagem: ").strip().capitalize())
 sobrenome = str(input("Digite o sobrenome do personagem(apenas um): ").strip().capitalize())
@@ -219,7 +223,9 @@ print("\nPersonagem gerado, dados salvos...")
 time.sleep(1.7)
 
 pessoa = Personagem(nome, idade, genero, 30, 30)
-
+#pessoa.mostrarPergonagem()
+#pessoa.aumentarCarisma()
+#pessoa.mostrarCarisma()
 time.sleep(0.7)
 os.system('cls' if os.name == 'nt' else 'clear') 
 
